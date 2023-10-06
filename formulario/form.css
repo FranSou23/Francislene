@@ -1,0 +1,62 @@
+form{
+/*Apenas para centralizar o form na pagina*/
+margin: 0 auto;
+width: 400px;
+/*Para ver as bordas do formulario*/
+padding: 6em;
+border: 2px solid #167432;
+border-radius: 9em ;
+}
+
+
+form div+div {
+    margin-top: 1.2em;
+}
+label{
+    /*Para ter certeza que todos as labels tem o mesmo tamanho e estão propriamente alinhadoas*/
+display: inline-block;
+width: 90px;
+text-align:right;
+}
+input,textarea{
+/*Para certificar-se que todos os campos de texto tem a mesma 
+configuração de fonte.Por padrão, textares ter uma fonte monospace*/
+font: 1em sans-serif;
+
+/*Para dar o mesmo tamanho a todos os campo de texto*/
+width: 300px;
+box-sizing: border-box;
+
+/*para harmonizar o look & feel das bordas nos campos de texto*/
+border: 1px solid #0ddd0d;
+
+}
+
+input:focus,textarea:focus {
+    /*Dar um pouco de destaque nos elementos ativos */
+    border-color: rgb(243, 27, 12);
+}
+
+textarea {
+/*Para alinhar corretamente os campos de texto de varias linhas
+com sua label*/
+vertical-align: top;
+/*Para dar espaço suficient para digitar algum texto*/
+height: 5em;
+
+/*Para permitir aos usuarios redimensionarem qualquer textarea verticalmente.
+ele não funciona em todos os browsers*/
+resize: vertical;
+}
+
+.button {
+/*Para posicionar os botoes para a mesma posiçõ dos campos de texto*/
+    padding-left: 90px;
+/*mesmo tamanho que os elementos do tipo label*/
+}
+
+button{
+    /* Esta margem extra representa aproximadamente o mesmo espaço
+    que o espaço estre as labels e os seus campos de texto*/
+    margin-left: 0.5em;
+}
